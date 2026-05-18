@@ -1,4 +1,8 @@
 #include <iostream>
 using namespace std;
 
-class AbstraksiKlass
+class AbstraksiKlass {
+private: string x, y;
+
+
+}
