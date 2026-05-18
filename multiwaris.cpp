@@ -4,15 +4,14 @@ using namespace std;
 class orang {
 public:
     int umur;
-
     orang(int pUmur) :
         umur(pUmur)
     {
-        cout << "orang dibuat dengan umur " << umur << "\n" << endl;
+        cout << "Orang dibuat dengan umur " << umur << "\n" << endl;
     }
-};
+}
 
-class pekerja : public orang {
+class pekerja : virtual public orang {
 public:
     pekerja(int pUmur) :
         orang(pUmur)
@@ -21,8 +20,8 @@ public:
     }
 };
 
-class pelajar : public orang {
-public:
+class pelajar : virtual public orang {
+public: 
     pelajar(int pUmur) :
         orang(pUmur)
     {
@@ -32,15 +31,18 @@ public:
 
 class budi : public pekerja, public pelajar {
 public:
-    budi(int umur) :
+
+    budi(int pUmur) :
         pekerja(pUmur),
-        pelajar(pUmur)
+        pelajar(pUmur),
+        orang(pUmur) //hal ini dapat dilakukan jika menggunakan virtual
     {
         cout << "Budi dibuat\n" << endl;
     }
 };
 
 int main() {
-    bdui a(12);
+    budi a(12);
+
     return 0;
 }
