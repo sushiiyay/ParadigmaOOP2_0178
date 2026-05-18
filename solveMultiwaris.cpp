@@ -32,7 +32,7 @@ public:
 
 class budi : public pekerja, public pelajar {
 public:
-    budi(int umur) :
+    budi(int pUmur) :
         pekerja(pUmur),
         pelajar(pUmur)
     {
@@ -41,6 +41,6 @@ public:
 };
 
 int main() {
-    bdui a(12);
+    budi a(12);
     return 0;
 }
