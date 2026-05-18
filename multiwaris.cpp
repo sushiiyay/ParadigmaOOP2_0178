@@ -18,7 +18,7 @@ public:
     {
         cout << "pekerja dibuat\n" << endl;
     }
-}
+};
 
 class pelajar : virtual public orang {
 public: 
@@ -27,7 +27,7 @@ public:
     {
         cout << "pelajar dibuat\n" << endl;
     }
-};
+}
 
 class budi : public pekerja, public pelajar {
 public:
