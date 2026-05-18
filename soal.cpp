@@ -6,7 +6,7 @@ class RekeningBank {
   public:
     virtual void potongAdmin() = 0;
     virtual ~RekeningBank() {}
-}
+};
 
 
 class RekeningSyariah : public RekeningBank {
@@ -26,7 +26,7 @@ class RekeningSyariah : public RekeningBank {
       cout << "Saldo    : Rp " << saldo << endl;
       cout << "----------------------------" << endl;
     }
-};
+}
 
 class RekeningKonvensional : public RekeningBank {
   private:
