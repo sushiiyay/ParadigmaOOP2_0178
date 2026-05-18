@@ -26,7 +26,7 @@ class RekeningSyariah : public RekeningBank {
       cout << "Saldo    : Rp " << saldo << endl;
       cout << "----------------------------" << endl;
     }
-}
+};
 
 class RekeningKonvensional : public RekeningBank {
   private:
@@ -46,7 +46,7 @@ class RekeningKonvensional : public RekeningBank {
       cout << "Saldo    : Rp " << saldo << endl;
       cout << "----------------------------" << endl;
     }
-};
+}
 
 class RekeningPremium : public RekeningBank {
   private:
