@@ -6,13 +6,13 @@ public:
     virtual void perkenalan() final{
         cout << "Hallo saya Function dari base class";
     }
-}
+};
 class derivedClass : public baseClass {
 public:
     void perkenalan1(){
         cout << "Hallo saya Function dari derived Class";
     }
-};
+}
 
 int main(){
     derivedClass a;
