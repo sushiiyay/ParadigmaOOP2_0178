@@ -4,5 +4,5 @@ using namespace std;
 class AbstraksiKlass {
 private: string x, y;
 
-
+public:
 }
