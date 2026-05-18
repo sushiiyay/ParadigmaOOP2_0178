@@ -9,7 +9,7 @@ public:
     {
         cout << "Orang dibuat dengan umur " << umur << "\n" << endl;
     }
-}
+};
 
 class pekerja : virtual public orang {
 public:
@@ -18,7 +18,7 @@ public:
     {
         cout << "pekerja dibuat\n" << endl;
     }
-};
+}
 
 class pelajar : virtual public orang {
 public: 
